@@ -51,39 +51,35 @@ Create a program that prints various size ASCII art fish by calling the `drawFis
   
 **Part 1 Grading Scheme/Rubric**
 
-| **Functional Correctness**                                    |               |
-+---------------------------------------------------------------+---------------+
-| Correctly define a fish size parameter                        |    1 point    |
-| Correctly define the main method.                             |    1 point    |
-| Correctly call the drawFish method in main.                   |    1 point    |
-| Correctly define the drawFish method with correct parameter.  |    1 point    |
-| Proper use of procedural decomposition.                       |				|
-| - All work done in drawFish                                   |    0 point    |			
-| - Partial procedural decomposition                            |    1 point    |
-| - Full procedure decomposition                                |    2 points   |
-| Correctness of output                                         |               |
-| - Correct output for illegal sizes                            |    1 point    |
-| - Correct output for size 1                                   |    1 point    |
-| - Correct output for odd sizes                                |    1 point    |
-| - Correct output for even sizes                               |    1 point    |
-+---------------------------------------------------------------+---------------+
-| **Total**                                                     | **10 points** |
+**Functional Correctness - 10 points**
+---------------------------------------
+1 point: Correctly define a fish size parameter    
+1 point: Correctly define the `main()` method.  
+1 point: Correctly call the `drawFish()` method in main.    
+1 point: Correctly define the `drawFish()` method with correct parameter.    
+2 points: Procedural Decomposition  
+  - 0 point: All work done in `drawFish()`  
+  - 1 point: Partial procedural decomposition    
+  - 2 points: Full procedure decomposition    
 
+4 points: Correctness of output  
+  - Correct output for illegal sizes    
+  - Correct output for size 1  
+  - Correct output for odd sizes    
+  - Correct output for even sizes  
+    
 
-| **Coding Style**                                              |               |
-+---------------------------------------------------------------+---------------+
-| Readability: Indentation.                                     |               |
-|   Good: 2 points, Fair: 1 point, Poor: 0 point                |   2 points    |
-| Readability: Meaningful method and variable names.            |               |
-|   Good: 2 points, Fair: 1 point, Poor: 0 point                |   2 points	|
-| Readability: Comments/Documentation.                          |               |
-|   Good: 2 points, Fair: 1 point, Poor: 0 point                |   2 points	|
-| Efficiency: Code duplication.                                 |               |
-|   Good: 2 points, Fair: 1 point, Poor: 0 point                |   2 points	|
-| Efficiency: Smart algorithm.                                  |               |
-|   Good: 2 point, Fair: 1 point, Poor: 0 point                 |   2 points	|
-+---------------------------------------------------------------+---------------+
-| **Total**                                                     | **10 points** |
+**Coding Style - 10 points**  
+-----------------------------  
+- Good: 2 points
+- Fair: 1 point
+- Poor: 0 point  
+
+2 points: Readability: Indentation  
+2 points: Readability: Meaningful method and variable names.  
+2 points: Readability: Comments/Documentation.  
+2 points: Efficiency: Code duplication.  
+2 points: Efficiency: Smart algorithm.  
 
 ##Part 2##
 Modify your main method to call the `foodChain()` method. The `foodChain()` method takes three integer parameters: minSize, maxSize and sizeStep that are defined as class constants. It will call the `drawFish()` method to print several fishes from maxSize to minSize decreasing the fish size by sizeStep on each fish. The resulting output will look like the big fish is chasing and eating the smaller fish.
@@ -147,42 +143,40 @@ The `foodChain()` method may assume the parameters are valid. In other words, it
 
 ##Grading Scheme/Rubric##
 
-| **Functional Correctness**                                        |               |
-+-------------------------------------------------------------------+---------------+
-| Correctly define the minSize, maxSize, sizeStep class constants.  |               |
-| - Fully correct                                                   |   2 points    |
-| - Partially correct                                               |   1 point     |
-| - Missing or incorrect                                            |   0 point     |
-| Correctly call the foodChain method in main.                      |   1 point     |
-| Correctly define the foodChain method with correct parameters.    |   1 point     |
-| Correct implementation of the for-loop in the foodChain method.   |   1 point     |
-| Proper use of procedural decomposition.                           |               |
-| - All work done in foodChain                                      |   0 point     |
-| - Partial procedural decomposition                                |   1 point     |
-| - Full procedure decomposition                                    |   2 points    |
-| Correctness of output.                                            |               |
-| - Correct alignment for odd size, odd center column               |   1 point     |
-| - Correct alignment for odd size, even center column              |   1 point     |
-| - Correct alignment for even size, odd center column              |   1 point     |
-| - Correct alignment for even size, even center column             |   1 point     |
-| - foodChain(1, 3, 1)                                              |   1 point     |
-| - foodChain(1, 9, 2)                                              |   1 point     |
-| - foodChain(2, 10, 2)                                             |   1 point     |
-| - minSize 1, random maxSize up to 20, random step between 1 and 4 |   1 point     |
-+-------------------------------------------------------------------+---------------+
-| **Total**                                                         | **15 points** |
+**Functional Correctness - 15 points**
+---------------------------------------
 
-| **Coding Style**                                                  |               |
-+-------------------------------------------------------------------+---------------+
-| Readability: Indentation.                                         |               |
-|   Good: 2 points, Fair: 1 point, Poor: 0 point                    |   2 points    |
-| Readability: Meaningful method and variable names.                |               |
-|   Good: 2 points, Fair: 1 point, Poor: 0 point                    |   2 points    |
-| Readability: Comments/Documentation.                              |               |
-|   Good: 2 points, Fair: 1 point, Poor: 0 point                    |   2 points    |
-| Efficiency: Code duplication.                                     |               |
-|   Good: 2 points, Fair: 1 point, Poor: 0 point                    |   2 points    |
-| Efficiency: Smart algorithm.                                      |               |
-|   Good: 2 point, Fair: 1 point, Poor: 0 point                     |   2 points    |
-+-------------------------------------------------------------------+---------------+
-| **Total**                                                         | **10 points** |
+2 points: Correctly define the minSize, maxSize, sizeStep class constants.  
+- 2 points: Fully correct  
+- 1 points: Partially correct  
+- 1 point: Missing or incorrect  
+
+1 point: Correctly call the `foodChain()` method in main.  
+1 point: Correctly define the `foodChain()` method with correct parameters.  
+1 point: Correct implementation of the for-loop in the `foodChain()` method.  
+2 points: Proper use of procedural decomposition.  
+- 0 points: All work done in `foodChain()`  
+- 1 point: Partial procedural decomposition  
+- 2 points: Full procedure decomposition  
+
+8 points: Correctness of output.  
+- Correct alignment for odd size, odd center column  
+- Correct alignment for odd size, even center column  
+- Correct alignment for even size, odd center column  
+- Correct alignment for even size, even center column  
+- foodChain(1, 3, 1)  
+- foodChain(1, 9, 2)  
+- foodChain(2, 10, 2)  
+- minSize 1, random maxSize up to 20, random step between 1 and 4  
+
+**Coding Style - 10 points**  
+-----------------------------  
+- Good: 2 points
+- Fair: 1 point
+- Poor: 0 point  
+
+2 points: Readability: Indentation  
+2 points: Readability: Meaningful method and variable names.  
+2 points: Readability: Comments/Documentation.  
+2 points: Efficiency: Code duplication.  
+2 points: Efficiency: Smart algorithm. 
