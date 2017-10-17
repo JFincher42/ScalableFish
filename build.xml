@@ -10,7 +10,7 @@
   <path id="classpath.test">
     <pathelement location="lib/junit-4.12.jar" />
     <pathelement location="lib/hamcrest-all-1.3.jar" />
-    <pathelement location="lib/ScalableFishSample.jar" />
+    <pathelement location="test/ScalableFishSample.jar" />
     <pathelement location="${main.build.dir}"/>
     <path refid="classpath.base" />
   </path>
